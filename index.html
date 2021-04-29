@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tuty Lily</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/image/favicon.png"/>
+    <!-- css link file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- typography -->
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="left-header bg-light col-2 shadow bg-body rounded" >
+            <h4>התקשרו עכשיו</h4>
+            <a href="tel:050-000-0000" >050-000-0000</a>
+        </div>
+        <div class="right-header float-right">
+            <img src="./image/logo-small.png" alt="logo">
+        </div>
+    </div>
+
+    <!-- BODY -->
+        <!-- Card form -->
+        <div id="card" class="card mb-1" style="max-width: 100%;">
+            <div class="row g-0">
+                <div id="input-container" class="col-md-6 col-sm-6 col-xs-12 bg-light" style="max-width:38rem;">
+                    <h4 class="text-center">מלאו את הפרטים וניצור איתכם קשר</h4>
+                    <form onsubmit="return false" method="post" id="input-form" class="row col-6 col-sm-6 col-xs-12" name="contactForm">
+                        <div class="mb-1 " >
+                            <label for="fName" class="form-label " ></label>
+                            <input type="text" class="form-control shadow-none col-md-4 col-sm-3 col-xs-2" id="fName" name="fName" required minlength="2" placeholder="* שם פרטי" style="width: 500px;margin-right: 50px;border-color: #41B37F;">
+                        </div>
+                        <div class="mb-1 " >
+                            <label for="lName" class="form-label " ></label>
+                            <input type="text" class="form-control shadow-none col-3 col-xs-12 col-sm-6" id="lName" name="name" required minlength="2" placeholder="* שם משפחה" style="width: 500px;margin-right: 50px;border-color: #41B37F;">
+                        </div>
+                        <div class="mb-1">
+                            <label for="phone" class="form-label"></label>
+                            <input type="tel" class="form-control shadow-none" id="phone" name="phone"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="* טלפון" style="width: 500px;margin-right: 50px;border-color: #41B37F;">
+                        </div>
+                        <div class="mb-1">
+                            <label for="mail" class="form-label"></label>
+                            <input type="email" class="form-control shadow-none" id="mail" name="mail" required  placeholder="* אימייל" style="width: 500px;margin-right: 50px;border-color: #41B37F;">
+                            <span class="error" aria-live="polite"></span>
+                        </div>
+                        <div class="mb-1">
+                            <label for="msg"></label>
+                            <textarea id="msg" class="form-control" name="message" cols="80" rows="4" required minlength="2" maxlength="140" placeholder="* הודעה" style="width: 500px;margin-right: 50px;border-color: #41B37F;resize: none;"></textarea>
+                          </div>
+                        <div class="m-4">
+                            <button type="button" value="Send Email"
+                            onclick="sendEmail()"  class="btn" name="button" style="width: 500px;margin-right: 26px; background-color: #1FA87A;color:#ffff">שלח</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Card text -->
+                <div class="col-md-6">
+                    <div id="card-text" class="card-body text-center">
+                        <h5 class="card-title fw-bold fs-4"> כותרת הראשית ,הבולטת וברורה .המסר העיקרי של הקמפיין</h5>
+                        <p class="card-text fw-bolder fs-5">הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף.</p>
+                    </div>
+                </div>
+                <!-- card pas -->
+                <div  class="card mb-12 text-center bg-light">
+                    <h5 id="card-footer">במשתלה הקסומה שלנו</h5>
+                </div>
+        </div>
+
+    <!-- FOOTER -->
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body text-center" style="background-color: #1B936D;">
+                <img class="card-img-top w-25" src="./image/sadna.png" alt="Card image cap">
+              <h5 class="card-title text-light text-center">סדנאות מקרמה</h5>
+              <p class="card-text text-light text-center">הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.</p>
+            </div>
+          </div>
+        <div class="card">
+            <div class="card-body text-center" style="background-color: #26AB7B;">
+                <img class="card-img-top w-25" src="./image/shuk.png" alt="Card image cap">
+              <h5 class="card-title text-light text-center">שוק פירות וירקות</h5>
+              <p class="card-text text-light text-center">הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.</p>
+            </div>
+          </div>
+        <div class="card">
+          <div class="card-body text-center" style="background-color: #41B37F;">
+            <img class="card-img-top w-25" src="./image/azizim.png" alt="Card image cap">
+            <h5 class="card-title text-light text-center">מגוון עציצים</h5>
+            <p class="card-text text-light text-center">הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.</p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- JS file link -->
+    <script src="script.js"></script>
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- bootstrap java script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>

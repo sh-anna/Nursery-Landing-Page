@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+padding: 40px;
+  text-align: center;
+  background:#41B37F;
+  color: white;
+  font-size: 30px;
+}
+
+/* header wave style */
+
+
+/* left-header */
+.left-header{
+    color: #41B37F;
+    margin: 0 0 0 30px;
+}
+.left-header a{
+    text-decoration: none;
+    color: #41B37F !important;
+}
+.right-header{
+    position: absolute;
+    float: right;
+    top: 0px;
+    right: 0; 
+}
+
+/* card-body */
+#card{
+    background-image: url("./image/pexels-ramdas-ware-102896.jpg");
+    /* Full height */
+  height: 100%;
+  
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.btn{
+    background-color: #41B37F;
+    color: #ffff;
+}
+.btn:active{
+    background-color: #1FA87A;
+    color: #ffff;
+}
+
+#input-container,#card-footer{
+    opacity: 0.7;
+    color: #41B37F;  
+}
+#input-container{
+    margin: 30px 30px 30px 60px;
+    direction: rtl;
+
+}
+#input-container h4{
+    margin-top: 25px;
+}
+#card-text{
+    direction: rtl;
+    margin: 80px 60px 30px 30px;
+    color:#ffff;
+    text-shadow: 2px 2px 6px #0000;
+}
+#card-footer{
+    font-size: 30px;
+    margin: 7px;
+}
+
+
+::placeholder{
+    color: #41B37F;
+}
+
+/* This is the style of our error messages */
+.error {
+    width  : 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: rgb(128, 94, 94);
+    border-radius: 0 0 5px 5px #41B37F;
+    box-sizing: border-box;
+}
+.error.active {
+    padding: 0.3em;
+}
+
+
