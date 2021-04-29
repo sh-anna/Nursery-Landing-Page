@@ -1,7 +1,7 @@
 # Nursery-Landing-Page
 
 Technologies: HTML, CSS, Java Script, Bootstrap 5.
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/sh-anna/Nursery-Landing-Page/blob/main/image/scrsh.JPG)
 
 מטרת הפרויקט:
 
